@@ -1,35 +1,27 @@
-<nav class="nav nav-pills nav-justified">
+<nav class="navbar navbar-expand-md ">
 
-    <a class="imgLo" href="">
-        <img src="../../../../assets/img/icon/bolao.ico" alt="Bolão">
+    <a class="nav-item nav-link" href="/criar-palpite">
+        Criar palpite
     </a>
 
-    <div class="btnNewPost">
-        <!-- <app-button-new-post title="Criar Post"></app-button-new-post> -->
-    </div>
-
-    <!-- <a  class="nav-item nav-link" href="/post/category/{{itens.description}}"> -->
-    <a class="nav-item nav-link">
-        <!-- <button class="btn btnLinks" (click)="getPostsByCategory(itens.id)">{{itens.description | titlecase}}</button> -->
-        <button class="btn btnLinks">Palpitar</button>
+    <a class="nav-item nav-link" href="/meus-palpites">
+        Meus palpites
     </a>
 
-    <a class="nav-item nav-link">
-        <button class="btn btnLinks">Seus palpites</button>
+    <a *ngIf="isAdmin" class="nav-item nav-link" href="/adicionar-confroto">
+        Adicionar confronto
     </a>
-
-    <!-- <div class="d-flex">
-
-        <div *ngIf="logged then editProfile else login"></div>
-
-    </div> -->
+    
+    <a class="nav-item" href="/admin" title="Admin">
+        <div *ngIf="logged then logout else login"></div>
+    </a>
 
 </nav>
 
-<!-- <ng-template #login>
-    <app-button-login></app-button-login>
+<ng-template #login>
+    <app-admin></app-admin>
 </ng-template>
 
-<ng-template #editProfile>
-    <app-button-profile></app-button-profile>
-</ng-template> -->
+<ng-template #logout>
+    <mat-icon>{{'logout'}}</mat-icon>
+</ng-template>

@@ -1,31 +1,12 @@
-img {
-    width: 40px;
-}
-
 nav {
     background-color: rgb(255, 255, 255, 0.5);
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    height: 4.5em;
 }
 
-.noStyleBtn {
-    border: unset;
-    cursor: pointer;
-}
-
-.btnNewPost {
-    border: unset;
-    cursor: pointer;
-    margin-left: 5%;
-    align-self: center;
-}
-
-.btnLinks {
-    border-bottom: solid 1px;
-    border-radius: 0;
-    border-top: 0px;
-    border-right: 0px;
-    border-left: 0px;
-}
-
-.imgLo {
-    padding: 10px 10px;
+a {
+    font-family: monospace;
+    font-weight: bolder;
+    font-size: x-large;
 }

@@ -1,15 +1,17 @@
 @import "~bootstrap/dist/css/bootstrap.css";
-/* @import "~@angular/material/prebuilt-themes/indigo-pink.css";
-@import "../node_modules/font-awesome/css/font-awesome.css"; */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+/* @import "../node_modules/font-awesome/css/font-awesome.css";  */
 
 
 
 body {
     margin: 0;
     font-family: Roboto, "Helvetica Neue", sans-serif;
-    /* background: rgb(174, 238, 185);
-    background: radial-gradient(circle, rgba(174, 238, 185, 1) 0%, rgba(210, 224, 86, 1) 100%); */
-    background: rgb(56, 51, 196);
-    background: radial-gradient(circle, rgb(56, 51, 196) -10%,
-            rgba(232, 232, 45, 0.869) 75%, rgba(88, 238, 103, 1) 100%);
+    background-color: rgb(0, 67, 255);
+    /* background: linear-gradient(123deg, rgba(0, 67, 255, 1) 10%, rgba(232, 232, 89, 1) 43%, rgba(88, 239, 103, 1) 66%); */
+    background: linear-gradient(123deg, rgba(0, 67, 255, 1), rgba(232, 232, 89, 1) 50%, rgba(88, 239, 103, 1));
+    background-attachment: fixed;
+    height: 100%;
 }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
