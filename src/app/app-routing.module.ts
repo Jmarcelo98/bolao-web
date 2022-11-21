@@ -1,15 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AdicionarConfrontoComponent } from './pages/adicionar-confronto/adicionar-confronto.component';
 import { AdminComponent } from './pages/admin/admin.component';
 import { CriarPalpiteComponent } from './pages/criar-palpite/criar-palpite.component';
-import { LoginComponent } from './pages/login/login.component';
 import { MeusPalpitesComponent } from './pages/meus-palpites/meus-palpites.component';
 
 const routes: Routes = [
-  {
-    path: 'login',
-    component: LoginComponent
-  }, 
   {
     path: 'admin',
     component: AdminComponent
@@ -21,6 +17,10 @@ const routes: Routes = [
   {
     path: 'meus-palpites',
     component: MeusPalpitesComponent
+  }, 
+  {
+    path: 'adicionar-confroto',
+    component: AdicionarConfrontoComponent
   }
 ];
 
